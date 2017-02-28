@@ -5,12 +5,12 @@
 
 (function(factory) {
     if (typeof define === 'function' && define.amd) {
-        define(['jquery', 'lodash', 'jquery-ui/core', 'jquery-ui/widget', 'jquery-ui/mouse', 'jquery-ui/draggable',
+        define(['jquery', 'underscore', 'jquery-ui/core', 'jquery-ui/widget', 'jquery-ui/mouse', 'jquery-ui/draggable',
             'jquery-ui/resizable'], factory);
     }
     else if (typeof exports !== 'undefined') {
       try { jQuery = require('jquery'); } catch(e) {}
-      try { _ = require('lodash'); } catch(e) {}
+      try { _ = require('underscore'); } catch(e) {}
       factory(jQuery, _);
     }
     else {
