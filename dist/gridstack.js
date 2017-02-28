@@ -7,10 +7,10 @@
 */
 (function(factory) {
     if (typeof define === 'function' && define.amd) {
-        define(['jquery', 'lodash'], factory);
+        define(['jquery', 'underscore'], factory);
     } else if (typeof exports !== 'undefined') {
         try { jQuery = require('jquery'); } catch (e) {}
-        try { _ = require('lodash'); } catch (e) {}
+        try { _ = require('underscore'); } catch (e) {}
         factory(jQuery, _);
     } else {
         factory(jQuery, _);
