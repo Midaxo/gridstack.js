@@ -5,8 +5,7 @@
 
 (function(factory) {
     if (typeof define === 'function' && define.amd) {
-        define(['jquery', 'underscore', 'jquery-ui/core', 'jquery-ui/widget', 'jquery-ui/mouse', 'jquery-ui/draggable',
-            'jquery-ui/resizable'], factory);
+        define(['jquery', 'underscore'], factory);
     }
     else if (typeof exports !== 'undefined') {
       try { jQuery = require('jquery'); } catch(e) {}
